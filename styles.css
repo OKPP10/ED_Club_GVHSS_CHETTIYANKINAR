@@ -4,6 +4,11 @@
     font-family: sans-serif;
 }
 
+@font-face {
+    font-family: custom;
+    src: url(resources/fonts/PlaywriteGBS-VariableFont_wght.ttf);
+}
+
 /*Background Image */
 .banner {
     /*background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(chettiyankinar.jpeg);*/
@@ -73,10 +78,17 @@
 }
 
 .para {
+    font-family: custom;
+    font-size: 110%;
     color: white;
     margin-left: 4vw;
     margin-right: 10vw;
-    font-size: 110%;
+
+}
+
+.para li {
+    font-family: custom;
+
 }
 
 .sideimg {
