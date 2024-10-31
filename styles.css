@@ -109,8 +109,8 @@
 
 /* Basic styling for video */
 .hover-video {
-    width: 10dvw;
-    height: 30dvh;
+    width: 100vw;
+    height: 100vh;
     transition: 0.3s;
 }
 
