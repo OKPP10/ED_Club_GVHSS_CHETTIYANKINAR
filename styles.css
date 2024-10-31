@@ -62,6 +62,13 @@
     float: right;
 }
 
+.box {
+    background: linear-gradient(45deg, rgba(136, 136, 136, 0.555) 0%, rgba(192, 156, 211, 0.555) 100%);
+    border-radius: 25px;
+    padding: 2vh;
+    margin: 1vh;
+}
+
 .headings {
     font-weight: bold;
     color: #1a2c48;
@@ -79,9 +86,9 @@
 .para {
     font-family: custom;
     font-size: 110%;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-left: 4vw;
-    margin-right: 10vw;
+    margin-right: 4vw;
 
 }
 
@@ -95,7 +102,8 @@
     height: 200px;
     border-radius: 300px;
     margin-left: 8vw;
-    margin-right: 15px;
+    margin-right: 1vw;
+    margin-top: 1vh;
     float: right;
 }
 
