@@ -38,6 +38,23 @@
         Join us for the inauguration ceremony on November 6th to celebrate this milestone and to begin an inspiring
         journey of learning, growth, and enterprise!
     </p>
+    <!--Hover to play video-->
+    <video class="hover-video" muted loop preload="auto">
+        <source src="vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <!--Hover to play js implimentation-->
+    <script>
+        const video = document.querySelector('.hover-video');
+
+        video.addEventListener('mouseover', () => {
+            video.play();
+        });
+
+        video.addEventListener('mouseout', () => {
+            video.pause();
+        });
+    </script>
     <!--Objectives paragraph-->
     <h2 class="headings">OBJECTIVE</h2>
     <ul type="square" class="para">
@@ -73,7 +90,7 @@
             businesse</li>
         <li>Incubate knowledge-based business start-ups</li>
         <li>Some of the expected gains are more interdisciplinary research and
-            new innovatins, lower transaction cost, more efficient use of science
+            new innovations, lower transaction cost, more efficient use of science
             and technology, more discoveries relevant to innovation, more
             knowledge based businesses and economic growth.</li>
 
@@ -81,23 +98,6 @@
 
 
     </ul>
-    <!--Hover to play video-->
-    <video class="hover-video" muted loop preload="auto">
-        <source src="vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <!--Hover to play js implimentation-->
-    <script>
-        const video = document.querySelector('.hover-video');
-
-        video.addEventListener('mouseover', () => {
-            video.play();
-        });
-
-        video.addEventListener('mouseout', () => {
-            video.pause();
-        });
-    </script>
 </body>
 
 </html>

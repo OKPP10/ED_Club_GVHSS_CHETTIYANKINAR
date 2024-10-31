@@ -53,9 +53,8 @@
     width: 100%;
 }
 
-.edits_icon {
-    width: 50px;
-    height: 50px;
+.edits_icon { 
+    height: 8vh;
     float: right;
 }
 
@@ -110,8 +109,8 @@
 
 /* Basic styling for video */
 .hover-video {
-    width: 400px;
-    height: auto;
+    width: 3vw;
+    height: 9vh;
     transition: 0.3s;
 }
 
