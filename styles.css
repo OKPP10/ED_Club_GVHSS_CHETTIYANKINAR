@@ -40,13 +40,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: scroll;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    flex-wrap: wrap;
 }
 
 .top ul li {
     list-style: none;
     display: inline-block;
-    margin: 1vw;
+    margin: 0.8em;
     color: var(--color-text);
     position: relative;
 }
