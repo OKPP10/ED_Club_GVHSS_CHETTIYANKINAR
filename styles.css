@@ -1,27 +1,41 @@
+:root {
+    --color-primary: #21D4FD;
+    --color-secondary: #4326c9;
+    --color-accent: rgba(0, 183, 255, 0.452);
+    --color-accent2: rgb(111, 0, 255);
+    --color-overlay: rgba(0, 0, 0, 0.288);
+    --color-box-start: rgba(136, 136, 136, 0.555);
+    --color-box-end: rgba(192, 156, 211, 0.555);
+    --color-heading: #1a2c48;
+    --color-text: white;
+    --color-text-alt: rgb(255, 255, 255);
+}
+
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
+/* Font Face */
 @font-face {
     font-family: custom;
     src: url(resources/fonts/PlaywriteGBS-VariableFont_wght.ttf);
 }
 
-/*Background Image */
+/* Background Image */
 .banner {
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #4326c9 100%);
+    background-color: var(--color-primary);
+    background-image: linear-gradient(19deg, var(--color-primary) 0%, var(--color-secondary) 100%);
     background-attachment: fixed;
-
 }
 
-/* top div styles*/
+/* Top Div Styles */
 .top {
-    background: rgba(0, 0, 0, 0.288);
+    background: var(--color-overlay);
     width: 100%;
-    margin: auto;
     padding: 1em 0;
     display: flex;
     align-items: center;
@@ -33,21 +47,20 @@
     list-style: none;
     display: inline-block;
     margin: 1vw;
-    color: white;
+    color: var(--color-text);
     position: relative;
 }
 
 .top ul li a {
     text-decoration: none;
-    color: white;
-
+    color: var(--color-text);
 }
 
 .top ul li::after {
     content: '';
     height: 3px;
     width: 0%;
-    background: linear-gradient(to right, rgba(0, 183, 255, 0.452), rgb(111, 0, 255));
+    background: linear-gradient(to right, var(--color-accent), var(--color-accent2));
     position: absolute;
     left: 0;
     bottom: -0.5vh;
@@ -65,25 +78,27 @@
 }
 
 .box {
-    background: linear-gradient(45deg, rgba(136, 136, 136, 0.555) 0%, rgba(192, 156, 211, 0.555) 100%);
+    background: linear-gradient(45deg, var(--color-box-start) 0%, var(--color-box-end) 100%);
     border-radius: 25px;
     padding: 2vh;
     margin: 1vh;
 }
+
 .right-box {
     display: inline-block;
     vertical-align: top;
 }
+
 .headings {
     font-weight: bold;
-    color: #1a2c48;
+    color: var(--color-heading);
     margin-left: 1vw;
     margin-top: 1vw;
     margin-bottom: 0.5vw;
 }
 
 .headings:hover {
-    color: white;
+    color: var(--color-text);
     transition: 0.25s;
     font-size: 180%;
 }
@@ -91,10 +106,9 @@
 .para {
     font-family: custom;
     font-size: 110%;
-    color: rgb(255, 255, 255);
+    color: var(--color-text-alt);
     margin-left: 4vw;
     margin-right: 4vw;
-
 }
 
 .para li {
@@ -111,7 +125,6 @@
 }
 
 .sideimg:hover {
-
     transition: 0.25s;
     border-radius: 30px;
 }
@@ -129,14 +142,14 @@
     border-radius: 30px;
 }
 
-/* Basic styling for video */
+/* Basic Styling for Video */
 .hover-video {
     width: 100vw;
     height: 100vh;
     transition: 0.3s;
 }
 
-/* When hovering, play the video */
+/* When Hovering, Play the Video */
 .hover-video:hover {
     animation-play-state: running;
 }
