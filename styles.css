@@ -1,12 +1,11 @@
 :root {
-    --color-primary: #21D4FD;
-    --color-secondary: #4326c9;
-    --color-accent: rgba(0, 183, 255, 0.452);
-    --color-accent2: rgb(111, 0, 255);
-    --color-overlay: rgba(0, 0, 0, 0.288);
-    --color-box-start: rgba(136, 136, 136, 0.555);
-    --color-box-end: rgba(192, 156, 211, 0.555);
-    --color-heading: #1a2c48;
+    --color-primary: #8e8bb6;
+    --color-secondary: #8cadd0;
+    --color-accent: rgb(23, 162, 177);
+    --color-accent2: rgba(186, 232, 232, 0.5);
+    --color-box-start: rgba(39, 38, 67, 0.25);
+    --color-box-end: rgba(36, 143, 163, 0.25);
+    --color-heading: #272643;
     --color-text: white;
     --color-text-alt: rgb(255, 255, 255);
 }
@@ -34,13 +33,14 @@
 
 /* Top Div Styles */
 .top {
-    background: var(--color-overlay);
+    background-image: linear-gradient(45deg, var(--color-box-start) 0%, var(--color-box-end) 100%);
     width: 100%;
     padding: 1em 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-x: hidden;
+    /* Hide horizontal overflow */
     flex-wrap: wrap;
 }
 
