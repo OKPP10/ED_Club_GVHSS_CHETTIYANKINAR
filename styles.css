@@ -85,11 +85,6 @@
     margin: 1vh;
 }
 
-.right-box {
-    display: inline-block;
-    vertical-align: top;
-}
-
 .headings {
     font-weight: bold;
     color: var(--color-heading);
@@ -126,19 +121,6 @@
 }
 
 .sideimg:hover {
-    transition: 0.25s;
-    border-radius: 30px;
-}
-
-.sideimg2 {
-    width: 50%;
-    height: 50%;
-    border-radius: 100px;
-    margin-left: 30px;
-    margin-right: 10px;
-}
-
-.sideimg2:hover {
     transition: 0.25s;
     border-radius: 30px;
 }
