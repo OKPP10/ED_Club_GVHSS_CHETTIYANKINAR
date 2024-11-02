@@ -10,27 +10,36 @@
 </head>
 
 <body class="banner">
-    <!--top head div-->
-    <div class="top">
+    <header class="top">
         <ul>
             <li>
-                <h1>ENTREPRENEURSHIP
-                    DEVELOPMENT CLUB</h1>
+                <h1>
+                    <img src="resources/edclub_logo.jpeg" alt="edclub_logo" class="logo">
+                    Entrepreneurship Development Club
+                </h1>
             </li>
             <li>
-                <h1>GVHSS CHETTIYANKINAR</h1>
+                <h1>
+                    <img src="resources/edclub_logo.jpeg" alt="edclub_logo" class="logo">
+                    GVHSS Chettiyankinar</h1>
             </li>
         </ul>
         <ul>
-            <li><a href="https://www.instagram.com/ed_club_ghss_chettiyankinar/profilecard/?igsh=Y2RnbmFtaDhjN3hp"><img
-                        src="resources/instagram.png" class="edits_icon"><br>@ED_club</a></li>
+            <li>
+                <a href="https://www.instagram.com/ed_club_ghss_chettiyankinar/profilecard/?igsh=Y2RnbmFtaDhjN3hp"
+                    aria-label="Instagram profile of ED Club" target="_blank" rel="noopener noreferrer">
+                    <img src="resources/instagram.png" class="edits_icon" alt="Instagram icon">
+                    <br>@ED_club
+                </a>
+            </li>
         </ul>
-    </div>
+    </header>
+
     <!-- inaguration paragraph -->
 
     <div class="box">
-        <h2 class="headings">INAUGURATION</h2>
-        <img src="resources/inaguration.jpeg" alt="inaguration" class="sideimg">
+        <h2 class="headings">Inauguration</h2>
+        <img src="resources/edclub_logo.jpeg" alt="edclub_logo" class="sideimg">
         <p class="para">
             We are excited to announce the launch of the Entrepreneurship Development Club at GVHSS Chettiyanknar!
             This
@@ -48,28 +57,20 @@
             inspiring
             journey of learning, growth, and enterprise!
         </p>
+        <img src="resources/inaguration.jpeg" alt="inaguration" class="sideimg">
+        <p class="para" style="margin-top: 1vh;">
+            We are thrilled to announce that Jafer, the CEO of Ponkas Food Products, will be inaugurating the
+            Entrepreneurship Development Club at GVHSS Chettiyanknar on November 6th! His presence will bring valuable
+            insights and inspiration to our students as they embark on this new journey in entrepreneurship. Jafer's
+            achievements with Ponkas Food Products, a successful brand in the food industry, demonstrate the power of
+            vision, dedication, and innovation—qualities that our club aims to instill in its members. Join us to hear
+            from Jafer as he shares his entrepreneurial journey, motivating our students to pursue their dreams and make
+            an impact in their own unique ways.
+        </p>
     </div>
-
-    <!--Hover to play video
-    <video class="hover-video" muted loop preload="auto">
-        <source src="vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>-->
-    <!--Hover to play js implimentation-->
-    <script>
-        const video = document.querySelector('.hover-video');
-
-        video.addEventListener('mouseover', () => {
-            video.play();
-        });
-
-        video.addEventListener('mouseout', () => {
-            video.pause();
-        });
-    </script>
     <!--Objectives paragraph-->
     <div class="box">
-        <h2 class="headings">OBJECTIVE</h2>
+        <h2 class="headings">Objectives</h2>
         <ul type="circle" class="para">
             <li>To inculcate both the technical skill and managerial skill in budding
                 entrepreneurs</li>
@@ -106,11 +107,31 @@
                 new innovations, lower transaction cost, more efficient use of science
                 and technology, more discoveries relevant to innovation, more
                 knowledge based businesses and economic growth.</li>
+        </ul>
 
 
     </div>
 
-    </ul>
+    <div class="box">
+        <!--Hover to play video-->
+        <video class="hover-video" muted loop preload="auto" tabindex="0">
+            <source src="resources/vid.mp4" type="video/mp4">
+            <img src="resources/inaguration.jpeg" alt="fallback-image">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!--Hover to play js implimentation-->
+    <script>
+        const video = document.querySelector('.hover-video');
+
+        video.addEventListener('mouseover', () => {
+            video.play();
+        });
+
+        video.addEventListener('mouseout', () => {
+            video.pause();
+        });
+    </script>
 </body>
 
 </html>
