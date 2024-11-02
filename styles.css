@@ -1,3 +1,4 @@
+/*Theme*/
 :root {
     --color-primary: #8e8bb6;
     --color-secondary: #8cadd0;
@@ -18,7 +19,7 @@
     font-family: sans-serif;
 }
 
-/* Font Face */
+/* Font face for para */
 @font-face {
     font-family: custom;
     src: url(resources/fonts/PlaywriteGBS-VariableFont_wght.ttf);
@@ -72,12 +73,14 @@
     width: 100%;
 }
 
+/*for a-link logo*/
 .edits_icon {
     height: 50px;
     width: 50px;
     float: right;
 }
 
+/*for content div*/
 .box {
     background: linear-gradient(45deg, var(--color-box-start) 0%, var(--color-box-end) 100%);
     border-radius: 25px;
@@ -85,6 +88,7 @@
     margin: 1vh;
 }
 
+/*heading & animation*/
 .headings {
     font-weight: bold;
     color: var(--color-heading);
@@ -99,6 +103,7 @@
     font-size: 180%;
 }
 
+/* paragraph & lists in paragraph*/
 .para {
     font-family: custom;
     font-size: 110%;
@@ -112,6 +117,7 @@
     margin-left: 4vw;
 }
 
+/*images & animatiom*/
 .sideimg {
     width: 100px;
     height: 100px;
