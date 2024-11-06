@@ -72,11 +72,13 @@
 .top ul li:hover::after {
     width: 100%;
 }
-.logo{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
+
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
 }
+
 /*for a-link logo*/
 .edits_icon {
     height: 50px;
