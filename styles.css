@@ -151,3 +151,15 @@
     border-radius: 0;
     animation-play-state: running;
 }
+.hover-video1 {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+/* When Hovering, Play the Video */
+.hover-video1:hover {
+    border-radius: 0;
+    animation-play-state: running;
+}
