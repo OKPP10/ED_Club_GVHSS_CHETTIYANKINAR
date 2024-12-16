@@ -142,7 +142,7 @@
 .hover-video {
     width: auto;
     height: 50vh;
-    border-radius: 50px;
+    border-radius: 25px;
     transition: 0.3s;
 }
 
@@ -151,15 +151,21 @@
     border-radius: 0;
     animation-play-state: running;
 }
-.hover-video1 {
-    width: 50vw;
-    height: 50vh;
-    border-radius: 50px;
+
+.hover-video2 {
+    width: 80%;
+    height: auto;
+    max-height: 80vh;
+    /* Ensures the video doesn't overflow vertically */
+    border-radius: 25px;
+    /* Optional styling */
     transition: 0.3s;
+    object-fit: cover;
+    /* Ensures video scales nicely */
 }
 
-/* When Hovering, Play the Video */
-.hover-video1:hover {
+/* On hover, apply styles */
+.hover-video2:hover {
     border-radius: 0;
     animation-play-state: running;
 }

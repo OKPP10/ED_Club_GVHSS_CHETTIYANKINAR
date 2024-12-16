@@ -115,12 +115,12 @@
 
     <div class="box">
         <!--Hover to play video-->
-        <video class="hover-video" muted loop preload="metadata" tabindex="0">
+        <video class="hover-video" controls preload="metadata" tabindex="0">
             <source src="resources/vid.mp4" type="video/mp4">
             <img src="resources/inaguration.jpeg" alt="fallback-image">
             Your browser does not support the video tag.
         </video>
-        <video class="hover-video1" muted loop preload="metadata" tabindex="0">
+        <video class="hover-video2" controls preload="metadata" tabindex="0">
             <source src="resources/vid2.mp4" type="video/mp4">
             <img src="resources/inaguration.jpeg" alt="fallback-image">
 
@@ -128,7 +128,7 @@
     </div>
     <!--Hover to play js implimentation-->
     <script>
-        const videos = document.querySelectorAll('.hover-video');
+        const videos = document.querySelectorAll('.hover-video, .hover-video2');
 
         videos.forEach((video) => {
             video.addEventListener('mouseover', () => {
